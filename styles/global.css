@@ -27,8 +27,8 @@ blockquote {
 
 a {
   position: relative;
-  text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 img {

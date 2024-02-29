@@ -1,12 +1,3 @@
-.line {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-}
-
 .header {
   padding: 92px 24px 92px;
   display: grid;
@@ -31,13 +22,16 @@
 .address_header {
   max-width: 266px;
   padding: 11px 25px 2px 0;
+  text-underline-offset: 4px;
 }
 
-.header_menu_item_active {
+.menu_item_active {
   list-style-type: none;
+  text-decoration: none;
 }
 
 .header_menu_item {
+  text-underline-offset: 4px;
   position: relative;
 }
 
@@ -51,7 +45,7 @@
 }
 
 
-address {
+.address {
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
@@ -60,27 +54,23 @@ address {
 }
 
 .cover {
-  background-image: url(../images/cover.jpg);
-  background-position: center;
+  background: url(../images/cover.jpg) no-repeat center / cover;
   min-height: 757px;
-  background-repeat: no-repeat;
   position: relative;
-  background-size: cover;
   color: #fff;
   text-transform: uppercase;
 }
 
 .overlay {
   background: rgb(0, 0, 0, 0.6);
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   position: absolute;
-
 }
 
 .cover_title {
+  position: relative;
   display: flex;
   gap: 20px;
   font-weight: 700;
@@ -121,6 +111,7 @@ address {
   justify-content: space-between;
   gap: 43px;
   padding: 0 50px 51px 78px;
+  position: relative;
 }
 
 .cover_text {
@@ -175,14 +166,13 @@ address {
 }
 
 .lots_item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
   min-width: 334px;
   height: 563px;
-  padding-left: 40px;
-  padding-right: 40px;
+}
+
+.link_lots {
+  display: contents;
 }
 
 .lots_item_text {
@@ -198,27 +188,25 @@ address {
   letter-spacing: 0.13em;
 }
 
+.lots_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 100%;
+}
+
 .lots_left {
-  background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
 }
 
 .lots_center {
-  background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
+  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
   justify-content: center;
 }
 
 .lots_right {
-  background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
 }
 
 .lots_more {
@@ -226,6 +214,7 @@ address {
   font-size: 20px;
   display: inline-block;
   margin: 30px 0 0 40px;
+  text-underline-offset: 5px;
 }
 
 .about {
@@ -274,6 +263,7 @@ address {
 }
 
 .address_footer {
+  text-underline-offset: 5px;
   max-width: 240px;
 }
 
@@ -281,6 +271,7 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-underline-offset: 4px;
 }
 
 .footer_item {
